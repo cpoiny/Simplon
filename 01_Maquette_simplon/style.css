@@ -1,0 +1,570 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #F1F5F8;
+}
+
+header,
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 38px;
+    margin: 60px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: light;
+}
+
+.red-box {
+    background-color: #CF3034;
+    color: white;
+    border: none;
+}
+
+/* mettre un wrapper pour centrer tout le contenu */
+
+/* HEADER */
+
+header {
+    padding: 20px 0;
+    border-bottom: white solid 2px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+header .menu-normal {
+    display: flex;
+}
+
+header .menu-deroulant {
+    display: none;
+}
+
+header nav ul img {
+    margin-left: 7px;
+}
+
+ul li {
+    padding: 15px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+
+/* MAIN */
+
+
+
+/* Accueil*/
+
+#accueil {
+    background-color: white;
+    display: flex;
+    padding: 45px 0 45px 50px;
+    margin: 10px;
+    gap: 15px;
+}
+
+#accueil img:first-child {
+    width: 55%;
+    object-fit: cover;
+}
+
+#accueil img:nth-child(2) {
+    width: 50%;
+    object-fit: cover;
+}
+
+.accueil {
+    width: 50%;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#accueil .accueil p {
+    font-size: 22px;
+}
+
+#accueil .accueil button {
+    width: 35%;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.accueil h1 {
+    color: #CF3034;
+    font-size: 46px;
+    margin-top: 20px;
+}
+
+.accueil p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.white-button {
+    color: #CF3034;
+    border: #CF3034 solid 1px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+/* Impact */
+
+#impact {
+    margin: 80px 0;
+}
+
+#impact .number {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 auto;
+    gap: 15px;
+    padding: 15px;
+}
+
+#impact .number article {
+    background-color: white;
+    width: min(300px, 50%);
+    height: auto;
+    position: relative;
+    padding: 15px;
+}
+
+#impact .number article div {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 45px;
+}
+
+#impact .number article img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 15px;
+}
+
+#impact h3 {
+    font-size: clamp(25px, 10vw, 64px);
+    color: #CF3034;
+}
+
+#impact div article p {
+    font-size: 25px;
+}
+
+#impact div .red-box {
+    background-color: #CF3034;
+}
+
+#impact .number .red-box a {
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#impact .number .bloc4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#impact .number .red-box img {
+    margin: 10px;
+}
+
+/* TEMOIGNAGNES */
+
+#temoignages article {
+    background-color: white;
+    margin: 15px 0;
+    padding: 50px;
+    display: flex;
+}
+
+#temoignages article .card {
+    margin: 0 80px 0 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#temoignages article .parcours {
+    text-align: justify;
+    margin: 0;
+}
+
+#temoignages article:nth-child(2),
+#temoignages article:nth-child(3) {
+    display: none;
+}
+
+#temoignages article .card p {
+    font-size: 22px;
+}
+
+/*LES APPRENTIS */
+
+#apprentis .simplonnien {
+    background: url(img/img-apprentis.png) no-repeat center/cover;
+    height: 30vh;
+    position: relative;
+}
+
+#apprentis h4 {
+    font-size: 25px;
+}
+
+#apprentis .simplonnien .text-apprentis {
+    background-color: white;
+    width: 40%;
+    height: 75%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+#apprentis .simplonnien .text-apprentis .red-box {
+    background-color: #CF3034;
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 15px;
+    border-radius: 6%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#apprentis .simplonnien .text-apprentis .mobile-apprentis {
+    display: none;
+}
+
+
+/*PARTENAIRES*/
+
+#partenaires .logo-partenaires-1{
+    background: white;
+    display:flex;
+    justify-content: center;
+}
+#partenaires .logo-partenaires-1 img{
+    margin: 50px 30px;
+}
+
+#partenaires .logo-partenaires-2{
+    display:none;
+}
+#partenaires .fleche-carroussel{
+    float: right;
+    margin-bottom: 120px;
+    width:4%;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100vw;
+    background-color: #CF3034;
+    clear: both;
+    color: white;
+}
+
+footer a{
+    color:white;
+}
+footer .bloc1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+footer .bloc1 .simplon{
+    width:20%;
+    height: 35%;
+}
+footer .bloc1 .newsletter{
+    width:30%;
+    text-align: left;
+    padding-left: 200px;
+}
+
+footer .bloc1 .newsletter h2{
+    margin:0;
+    padding: 0;
+    font-size: 40px;
+}
+footer .bloc1 .newsletter p{
+    font-size: 18px;
+    padding: 10px 0 20px 0;
+    font-weight: bold;
+}
+footer .bloc1 .newsletter form textarea{
+    background-color: #CF3034;
+    border: white solid 1px;
+}
+footer .bloc1 .newsletter form textarea::placeholder{
+    color:white;
+    font-size: 20px;
+    color:white;
+    font-size: 20px;
+    padding:6px 15px;
+}
+footer .bloc1 .newsletter form button{
+    background: url(symbol/icon-mail.png) no-repeat center;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding:0;
+    border: none;
+}
+    
+/* MEDIA QUERIES */
+
+@media (max-width:999px) {
+
+    /*header menu burger */
+    header,
+    main,
+    footer{
+        width: 90vw;
+        padding: 0;
+    }
+
+    header{
+        margin: 30px 0 15px 0;
+        padding: 0;
+        border: none;
+    }
+
+    header img{
+        margin-left: 50px;
+    }
+
+    header .menuBurger {
+        display: block;
+        width: 40px;
+        height: 80px;
+        cursor: pointer;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    header .menuBurger span {
+        width: 100%;
+        height: 6px;
+        border-radius: 20%;
+        background-color: #CF3034;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    header .menuBurger span::before,
+    header .menuBurger span::after {
+        content: "";
+        position: absolute;
+        border-radius: 20%;
+        width: 100%;
+        height: 6px;
+        background-color: #CF3034;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    header .menuBurger span::before {
+        transform: translateY(-10px);
+    }
+
+    header .menuBurger span::after {
+        transform: translateY(10px)
+    }
+
+    header .menuBurger.active span {
+        background-color: transparent;
+    }
+
+    header .menuBurger.active span::before {
+        transform: translateY(0px) rotateZ(45deg);
+    }
+
+    header .menuBurger.active span::after {
+        transform: translateY(0px) rotateZ(-45deg);
+    }
+
+    header .menuBurger .menu-deroulant {
+        display: none;
+    }
+
+    header .menuBurger.active .menu-deroulant {
+        display: block;
+        transition: left 0.8s ease-in-out;
+        position: absolute;
+        top: -20px;
+        left: -780px;
+        background-color: #F1F5F8;
+        width: 100vw;
+        padding-left: 350px;
+
+    }
+
+    header .menuBurger.active .menu-deroulant li a:hover {
+        background-color: #722f15;
+
+    }
+
+    header .menu-normal {
+        display: none;
+    }
+
+    header .menu-deroulant {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    /*Accueil*/
+    #accueil {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    #accueil .accueil {
+        padding: 20px;
+    }
+
+    #accueil img:first-child {
+        width: 70%;
+    }
+
+    #accueil img:nth-child(2) {
+        display: none;
+    }
+
+    #accueil button {
+        margin: 15px 0;
+    }
+
+    #accueil .home_button button {
+        display: block;
+        width: 100%;
+    }
+
+    .accueil {
+        width: 100vw;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .accueil h1 {
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .accueil p {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    /*Impact */
+    #impact {
+        margin: 0 auto;
+    }
+
+    #impact .number {
+        flex-wrap: wrap;
+        margin-left: 25px;
+    }
+
+    #impact .number article {
+        width: 40vw;
+        height: 40.5vw;
+    }
+
+    /*Temoignages */
+
+    #temoignages {
+        width: 100vw;
+    }
+
+    #temoignages article {
+        margin: 0;
+        padding: 25px;
+        justify-content: center;
+
+    }
+
+    #temoignages article .card {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #temoignages img:nth-child(2) {
+        display: none;
+    }
+
+    /* APPRENTIS */
+    #apprentis {
+        width: 100vw;
+    }
+
+    #apprentis .simplonnien .text-apprentis .mobile-apprentis {
+        display: block;
+    }
+
+    #apprentis .simplonnien {
+        background: white;
+    }
+
+    #apprentis .simplonnien .text-apprentis {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    #apprentis .simplonnien .text-apprentis p {
+        font-size: 22px;
+    }
+
+    #apprentis .simplonnien .text-apprentis .red-box {
+        width: 100%;
+        font-size: 25px;
+    }
+
+}
